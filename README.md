@@ -4,6 +4,20 @@ Kubernetes Bootcamp
 This is the initial repository for the learning materials to the Mesosphere Kubernetes bootcamp.
 This bootcamp gives you an end-to-end understanding of Docker and how to orchestrate containers using Kubernetes. 
 
+How To View The Lectures
+====
+
+The lecture slides are done with [reveal.js](http://lab.hakim.se/reveal-js/#/) and using their markdown features.
+This means if you want to change the slides for session1 you would edit the file session1/lecture.md and *not* 
+the file session1/index.html.
+
+Because they use complx javascript from the index.html file you should run this command:
+
+    python -m SimpleHTTPServer
+
+That will start a basic HTTP server on the command line and then you can just go to [http://localhost:8000/](http://localhost:8000/) to start things off.
+
+
 Current Proposal
 ====
 
@@ -71,4 +85,5 @@ Michael Hausenblas (Mesosphere)
 Karl Isenberg (Mesosphere)
 Tyler Neely (Mesosphere)
 Aaron Bell (Mesosphere)
+
 
