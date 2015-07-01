@@ -1,14 +1,19 @@
 Mesosphere K8S Bootcamp
 =======
 
-Session #
+Session 1
 ----
 
-Title
+Container Basics
+
 
 
 Learning Objectives
 ====
+
+* Understand container basics (cgroups, namespaces, chroot) 
+* Understand Docker (images, registry, etc.)
+* Mostly slides, some instructor-executed examples
 
 
 

@@ -1,14 +1,23 @@
 Mesosphere K8S Bootcamp
 =======
 
-Session #
+Session 2
 ----
 
-Title
+Using Docker
+
 
 
 Learning Objectives
 ====
+
+* Find Docker images 
+* Launch pre-defined Docker images
+* Create a Docker image
+* Inspect a running Docker container 
+* Logging
+* Other topics (volumes, networking, etc.)
+* Mostly hands-on by participants
 
 
 

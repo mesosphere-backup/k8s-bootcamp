@@ -1,14 +1,21 @@
 Mesosphere K8S Bootcamp
 =======
 
-Session #
+Session 5
 ----
 
-Title
+Video Demo Wrap Up
+
 
 
 Learning Objectives
 ====
+
+* Kubernetes install on DCOS
+* Kubernetes on DCOS examples
+* Audience and Prerequisites
+* Familiar with Linux/shell
+* Hands-on sessions via GKE 
 
 
 

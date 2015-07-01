@@ -1,14 +1,19 @@
 Mesosphere K8S Bootcamp
 =======
 
-Session #
+Session 4
 ----
 
-Title
+End-to-End Example
+
 
 
 Learning Objectives
 ====
+
+* Architecture (suggestion: app server with node.js or Python/flask with Redis)
+* Define/gather Docker images and wiring 
+* Kubernetes deployment
 
 
 
