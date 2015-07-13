@@ -28,6 +28,7 @@ We'll use the example Google provides for a simple Node.js app.
 
 
 
+
 The Node.js Code
 ====
 
@@ -35,6 +36,7 @@ In the github repository do:
 
     cd session2/code/
     
+
 
 
 Configure A Compute Instance
@@ -45,6 +47,8 @@ Configure A Compute Instance
     --zone us-central1-f \
     --scopes storage-rw \
     --machine-type g1-small
+
+
 
 Setup The Instance
 ====
