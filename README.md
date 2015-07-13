@@ -87,3 +87,15 @@ Tyler Neely (Mesosphere)
 Aaron Bell (Mesosphere)
 
 
+
+GKE Install Notes
+====
+
+* Everything works up to Hello Node at gcloud docker push gcr.io/<google-project-name>/hello-node
+    * You need to run sudo gcloud components update beta first then this works
+* resize is DEPRECATED and will be removed in a future version. Use scale instead.
+* This kubectl stop hello-node causes error:
+    error: you must provide one or more resources by argument or filename
+
+
+
