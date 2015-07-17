@@ -224,11 +224,24 @@ Example C Code
 
 
     
-This Is Why We Use Docker
+Section 2: Enter Docker
 ====
 
 Docker provides all of this for you without any of the 
 headaches of knowing how cgroups and namespaces work.
+
+Think of Docker as "gcc for deployments" or "gcc to Chef's Ruby".
+
+
+
+Docker's Advantage
+====
+
+With Docker you combine crafting deployments (Chef/Puppet) with 
+process management, isolation, and accounting in one technology.
+
+Physical infrastructure then becomes dumb resources and easier
+to manage.
 
 
 
@@ -253,6 +266,14 @@ Another way to look at it is:
 * containers == running processes
 
 
+
+Docker Sequence Diagram
+====
+
+[Insert diagram of simple docker command sequence]
+
+
+
 DockerHub
 ====
 
@@ -261,6 +282,15 @@ The last piece of information we'll cover is:
 https://hub.docker.com/
 
 It's github for docker images.
+
+
+
+DockerHub Advantages
+====
+
+You can reuse other people's docker images to base yours on.
+
+Post your images to DockerHub and distribute them to others.
 
 
 
