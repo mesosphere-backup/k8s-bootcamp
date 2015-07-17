@@ -11,19 +11,20 @@ End-to-End Example
 Learning Objectives
 ====
 
-* Architecture (suggestion: app server with node.js or Python/flask with Redis)
-* Define/gather Docker images and wiring 
-* Kubernetes deployment
+* Demonstration of using GKE to deploy Kubernetes applications.
+* In-class project with help.
+* DCOS Demo at the end.
 
 
 
 Content
 ====
 
-
-
-Review
-====
+* Get setup on GKE first.
+* Use the node.js server they just created and push it to GKE.
+* Do the WPPD (wordpress persistent disk) demo and look at the YAML files.
+* review the kubectl and gcloud commands with latest updates.
+* Describe the final class project that they'll do on their own with help.
 
 
 
