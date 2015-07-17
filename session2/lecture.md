@@ -11,13 +11,10 @@ Using Docker
 Learning Objectives
 ====
 
-* Find Docker images 
-* Launch pre-defined Docker images
 * Create a Docker image
 * Inspect a running Docker container 
-* Logging
-* Other topics (volumes, networking, etc.)
-* Mostly hands-on by participants
+* Find Docker images 
+* Launch pre-defined Docker images
 
 
 
@@ -57,6 +54,20 @@ Setup The Instance
     gcloud compute ssh my-docker-vm --zone us-central1-f
     cd node-docker
     sudo gcloud components update
+
+
+
+Docker Commands For Managing Images
+====
+    docker build
+    docker rmi
+    docker images
+
+
+
+Building An Image
+====
+
     sudo docker build -t gcr.io/k8s-bootcamp/hello-node .
 
 
@@ -72,6 +83,12 @@ Exploring What You Made
     cd temp
     tar -xvf hello-node.tar
     find . -name "*.tar" -exec tar -tvf {} \; | less
+
+
+Docker Containers
+====
+
+How they differ from images.
 
 
 
@@ -93,7 +110,7 @@ Go to External IP with browser.
 
 
 
-Managing Dockers
+Managing Containers
 ====
 
     docker ps
@@ -101,14 +118,21 @@ Managing Dockers
     docker restart hello-node
     docker stop hello-node
     docker rm hello-node
+    docker rmi hello-node
+
+* images vs. containers
+* volumes are not cleaned up by default
+* tools to remove volumes and manage them
+* volumes eat up disk space
 
 
 
 In Class Exercise
 ====
 
-Use https://hub.docker.com/ to deploye a small application to your computer instance.
+Use https://hub.docker.com/ to deploy a small application to your computer instance.
 
+* Go through dockerhub vs. google's version.  Tell them they can use google's for faster.
 
 
 Review
