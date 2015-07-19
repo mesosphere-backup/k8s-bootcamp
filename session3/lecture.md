@@ -11,17 +11,20 @@ Kubernetes Basics
 Learning Objectives
 ====
 
-Make sure they know that they're using the GKE system and not deploying it locally.
-
 * Orchestration basics (requirements, solutions)
 * Kubernetes components (container, pod, label, service, network)
 * Kubernetes infrastructure (master, etcd, etc.)
 * GKE intro/overview
 * Managing nodes, pods and services
 
-Look at the k8s gophercon branch for examples/walkthrough docs improvements.
 
-https://github.com/mesosphere/mesos-usb/tree/gophercon
+
+Orchestration
+====
+
+It's orchestrating resources to match compute work loads.
+
+
 
 What is Kubernetes
 ===
@@ -29,6 +32,7 @@ What is Kubernetes
 AKA K8s... "kates"?
 
 A deployment, scheduling, and management infrastructure for docker containers.
+
 
 
 K8s Components
@@ -40,6 +44,7 @@ nodes
 kubelet
 pods
 containers
+
 
 
 K8s Structure
@@ -140,6 +145,14 @@ Kubernetes then leaves all of the containerization to Docker.
 
 Review
 ====
+
+* kubectl is your entry point to a k8s deployment.
+* controller manager controls cluster-level functions
+* schedulers talks to nodes to allocate resources
+* nodes then host pods
+* kube-proxy controls the network on nodes
+* pods then have groups of docker containers in them
+* docker containers share the same logical volume
 
 
 

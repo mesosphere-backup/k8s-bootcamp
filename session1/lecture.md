@@ -17,13 +17,22 @@ Learning Objectives
 
 
 
+Setup
+====
+
+Clone this repository:
+
+    git clone git@github.com:mesosphere/k8s-bootcamp.git
+
+
+
 Section 1: Container Basics
 ====
 
 * What is a container anyway?
-* cgroups
-* namespaces
-* chroot
+* chroot - Filesystem isolation.
+* cgroups - Resource allocation.
+* namespaces - Resource isolation.
 
 
 
@@ -170,12 +179,12 @@ Kind of like super chroot and super fork combined.
 Namespaces
 ====
 
-* The PID namespace for process IDs.
-* Network namespace for network interfaces.
-* "UTS" namespace to fake change the hostname.
-* Mount namespace for fake filesystem layouts.
-* IPC namespace to separate the System V IPC mechanisms.
-* User namespace separate user IDs.
+* PID - Isolate PIDs between processes.
+* Network - Isolate process to network resources.
+* "UTS" - Isolate the hostname to fake it out.
+* Mount - Isolate the filesystem mount points (chroot).
+* IPC - Isolate inter process communication.
+* User - Isolate specific users to specific processes.
 
 
 
@@ -184,7 +193,7 @@ Namespaces with clone
 
 The clone system call implements the most of namespaces.
 
-Compared to cgropus namespaces is pretty nice....if you know C.
+Compared to cgroups, namespaces are pretty nice....if you know C.
 
 
 
@@ -230,7 +239,9 @@ Section 2: Enter Docker
 Docker provides all of this for you without any of the 
 headaches of knowing how cgroups and namespaces work.
 
-Think of Docker as "gcc for deployments" or "gcc to Chef's Ruby".
+Think of Docker as statically compiled deployments.
+
+Chef would be dynamically generated deployments.
 
 
 
@@ -264,6 +275,7 @@ Another way to look at it is:
 * docker cli == your shell
 * images == statically compiled binaries
 * containers == running processes
+* dockerhub == dynamic linking?
 
 
 

@@ -81,7 +81,7 @@ Exploring What You Made
     tar -tvf hello-node.tar
     mkdir temp
     cd temp
-    tar -xvf hello-node.tar
+    tar -xvf ../hello-node.tar
     find . -name "*.tar" -exec tar -tvf {} \; | less
 
 
@@ -120,19 +120,16 @@ Managing Containers
     docker rm hello-node
     docker rmi hello-node
 
+
+
+Docker Gotchas
+====
+
 * images vs. containers
 * volumes are not cleaned up by default
 * tools to remove volumes and manage them
 * volumes eat up disk space
 
-
-
-In Class Exercise
-====
-
-Use https://hub.docker.com/ to deploy a small application to your computer instance.
-
-* Go through dockerhub vs. google's version.  Tell them they can use google's for faster.
 
 
 Review
