@@ -77,7 +77,8 @@ Create Your Pod
 
 We need a pod, and an image, which is your hello-node image.
 
-    kubectl run hello-node --image=gcr.io/<cloud-project-name>/hello-node --port=80
+    kubectl run hello-node \
+        --image=gcr.io/k8sbootcamp/hello-node --port=8080
 
 
 
