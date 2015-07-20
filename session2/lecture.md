@@ -1,4 +1,4 @@
-Mesosphere K8S Bootcamp
+Mesosphere Kubernetes Bootcamp
 =======
 
 Session 2
@@ -101,6 +101,15 @@ Running It
 
 
 
+run -it vs. -d
+====
+
+Use -it to test interactively.
+
+Use -d to run as a daemon normally.
+
+
+
 Make it Accessible
 ====
 
@@ -138,7 +147,6 @@ Review
 * We crafted a docker image for a Node.js application.
 * We inspected the image to see what is in it.
 * We got it running and managed it.
-* We did an exercise of using Docker Hub to do the image management.
 
 
 

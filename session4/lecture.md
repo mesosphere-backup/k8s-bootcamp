@@ -1,4 +1,4 @@
-Mesosphere K8S Bootcamp
+Mesosphere Kubernetes Bootcamp
 =======
 
 Session 4
@@ -34,7 +34,7 @@ You must run these to really get GKE:
 
     gcloud components update beta
     gcloud components update kubectl
-    gcloud config set project k8sbootcamp
+    gcloud config set project k8s-bootcamp
     gcloud config set compute/zone us-central1-f
 
 
@@ -51,6 +51,7 @@ Anyway we'll put your Node.js application online.
 Push To Gcloud
 ====
 
+    gcloud compute ssh my-docker-vm --zone us-central1-f
     gcloud docker push gcr.io/<google-project-name>/hello-node
 
 
@@ -153,7 +154,20 @@ Kubernetes Podwan Level 2
 
 Next is how to make persistent disk storage for databases and such.
 
-We'll make two nodes, one for wordpress, one for MySQL.
+We'll make two compute nodes with persistent disk.
+
+One for wordpress, one for MySQL.
+
+
+
+Compute Nodes vs. Pod Nodes
+====
+
+GCloud has compute nodes.
+
+Kubernetes though has pods that run on nodes.
+
+Connected but different concepts.
 
 
 
@@ -226,12 +240,28 @@ We will try this, but use the GUI if it doesn't work:
     gcloud compute firewall-rules create wppd-world-80 --allow tcp:80 \
         --target-tags gke-wppd-XXX-node
 
+    BUG: WHERE's THE OTHER INSTRUCTIONS?
+
+
+
+End Of Quick Introduction
+====
+
 
 
 Kubernetes Jedi In Training
 ====
 
 You've deployed from a docker and from YAML configurations.
+
+
+
+But First, This Important Message
+====
+
+A video from Mesosphere showing Kubernets on DCOS making all of this even easier.
+
+k8s-on-dcos-voiceover.mp4
 
 
 

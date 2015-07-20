@@ -1,4 +1,4 @@
-Mesosphere K8S Bootcamp
+Mesosphere Kubernetes Bootcamp
 =======
 
 * [Session 1: Container Basics (30-1 hour)](/session1/)

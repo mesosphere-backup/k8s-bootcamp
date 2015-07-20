@@ -1,4 +1,4 @@
-Mesosphere K8S Bootcamp
+Mesosphere Kubernetes Bootcamp
 =======
 
 Session 1
@@ -275,7 +275,7 @@ Another way to look at it is:
 * docker cli == your shell
 * images == statically compiled binaries
 * containers == running processes
-* dockerhub == dynamic linking?
+* registry == dynamic linking?
 
 
 
@@ -286,7 +286,7 @@ Docker Sequence Diagram
 
 
 
-DockerHub
+Registries
 ====
 
 The last piece of information we'll cover is:
@@ -295,14 +295,18 @@ https://hub.docker.com/
 
 It's github for docker images.
 
+Google has their own registry too:
+
+https://cloud.google.com/tools/container-registry/
 
 
-DockerHub Advantages
+
+Registry Advantages
 ====
 
 You can reuse other people's docker images to base yours on.
 
-Post your images to DockerHub and distribute them to others.
+Post your images to the Registry and distribute them to others.
 
 
 

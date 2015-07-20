@@ -1,4 +1,4 @@
-Mesosphere K8S Bootcamp
+Mesosphere Kubernetes Bootcamp
 =======
 
 Session 3
@@ -29,30 +29,30 @@ It's orchestrating resources to match compute work loads.
 What is Kubernetes
 ===
 
-AKA K8s... "kates"?
-
 A deployment, scheduling, and management infrastructure for docker containers.
 
 
 
-K8s Components
+Kubernetes Components
 ====
 
-kubectl
-scheduler
-nodes
-kubelet
-pods
-containers
+* kubectl
+* scheduler
+* nodes
+* kubelet
+* pods
+* containers
+* services and labels?
 
 
 
-K8s Structure
+
+Kubernetes Structure
 ====
 
 Push these on your mental "stack":
 
-* kubectl is your entry point to a k8s deployment.
+* kubectl is your entry point to a kubernetes deployment.
 * controller manager controls cluster-level functions
 * schedulers talks to nodes to allocate resources
 * nodes then host pods
@@ -69,7 +69,7 @@ Simplified Deployment Diagram
 
 
 
-The K8s Stack
+The Kubernetes Stack
 ===
 
 Let's now pop each component off your mental stack and describe it.
@@ -88,12 +88,23 @@ Pods
 
 "A pod (as in a pod of whales or pea pod) corresponds to a colocated group of applications running with a shared context."
 
+A Pod is a group of coordinating containers.
+
+The smallest unit the Scheduler understands.
+
 
 
 Nodes
 ===
 
 Node are most closely associated with "machines on the network".
+
+
+
+Services
+====
+
+?
 
 
 
@@ -107,9 +118,8 @@ Each node runs a network proxy and load balancer the controls network access to 
 Scheduler
 ====
 
-The scheduler then determines which Nodes have available resources.
-
-Apache Mesos is one such scheduler.
+The scheduler then determines which Nodes have available resources and runs
+Pods on them.
 
 
 
@@ -146,7 +156,7 @@ Kubernetes then leaves all of the containerization to Docker.
 Review
 ====
 
-* kubectl is your entry point to a k8s deployment.
+* kubectl is your entry point to a Kubernetes deployment.
 * controller manager controls cluster-level functions
 * schedulers talks to nodes to allocate resources
 * nodes then host pods
