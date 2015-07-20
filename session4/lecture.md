@@ -84,8 +84,29 @@ We need a pod, and an image, which is your hello-node image.
 Put It On The Internet
 ====
 
-1. Go to the GCE GUI and set "Allow HTTP Traffic".
-2. Go to the IP address on that page with your browser.
+You can also use gcloud to expose ports, but it sometimes doesn't work:
+
+    kubectl get nodes
+
+Get the part up-to-and-including the -node
+
+
+
+Firewall Rules
+====
+
+    gcloud compute firewall-rules create hello-world-8080 \
+        --allow tcp:8080 \
+        --target-tags <node-name-prefix>
+    kubectl expose rc hello-node --create-external-load-balancer=true
+    kubectl get services hello-node
+
+
+
+Visit It
+====
+
+Visit the second IP address at port 8080.
 
 
 
@@ -112,6 +133,18 @@ All Commands Used
 
 
 
+Firewall Commands
+====
+
+    kubectl get nodes
+    gcloud compute firewall-rules create hello-world-8080 \
+        --allow tcp:8080 \
+        --target-tags <node-name-prefix>
+    kubectl expose rc hello-node --create-external-load-balancer=true
+    kubectl get services hello-node
+
+
+
 Where These Are Documented
 ====
 
@@ -127,25 +160,6 @@ Command Line Help
     gcloud help
     kubectl help
 
-
-
-Note on Ports and Firewalls
-====
-
-You can also use gcloud to expose ports, but it sometimes doesn't work:
-
-    kubectl get nodes
-    gcloud compute firewall-rules create hello-world-PORT --allow tcp:PORT \
-        --target-tags <node-name-prefix>
-    kubectl expose rc hello-node --create-external-load-balancer=true
-    kubectl get services hello-node
-
-
-
-We'll Try That Next
-====
-
-If it doesn't work then just use the GUI.
 
 
 
@@ -234,10 +248,8 @@ View And Deploy Wordpress
 Expose Wordpress
 ====
 
-We will try this, but use the GUI if it doesn't work:
-
     kubectl get nodes
-    gcloud compute firewall-rules create wppd-world-80 --allow tcp:80 \
+    gcloud compute firewall-rules create wppd-80 --allow tcp:80 \
         --target-tags gke-wppd-XXX-node
     kubectl expose rc hello-node --create-external-load-balancer=true
     kubectl get services hello-node
@@ -253,15 +265,6 @@ Kubernetes Jedi In Training
 ====
 
 You've deployed from a docker and from YAML configurations.
-
-
-
-But First, This Important Message
-====
-
-A video from Mesosphere showing Kubernets on DCOS making all of this even easier.
-
-k8s-on-dcos-voiceover.mp4
 
 
 
