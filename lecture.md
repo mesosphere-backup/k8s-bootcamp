@@ -1,6 +1,31 @@
 Mesosphere Kubernetes Bootcamp
 =======
 
+
+
+Cell Phones
+====
+
+
+
+Proctors
+====
+
+* Karl
+* Tyler
+* Michael
+* Brian
+
+
+
+Asking Questions
+====
+
+
+
+Agenda
+====
+
 * [Session 1: Container Basics (30-1 hour)](/session1/)
 * [Session 2: Using Docker (1 hour)](/session2/)
 * [Session 3: Kubernetes Basics (1 hour)](/session3/)

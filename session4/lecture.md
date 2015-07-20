@@ -239,8 +239,8 @@ We will try this, but use the GUI if it doesn't work:
     kubectl get nodes
     gcloud compute firewall-rules create wppd-world-80 --allow tcp:80 \
         --target-tags gke-wppd-XXX-node
-
-    BUG: WHERE's THE OTHER INSTRUCTIONS?
+    kubectl expose rc hello-node --create-external-load-balancer=true
+    kubectl get services hello-node
 
 
 

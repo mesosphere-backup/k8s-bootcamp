@@ -17,6 +17,13 @@ Learning Objectives
 * Launch pre-defined Docker images
 
 
+Getting Compute
+====
+
+https://cloud.google.com/container-engine/docs/before-you-begin
+gcloud config set compute/zone us-central1-f
+
+
 
 Crafting Our First Docker
 ====
@@ -57,18 +64,26 @@ Setup The Instance
 
 
 
+Building An Image
+====
+
+    sudo docker build -t gcr.io/k8s-bootcamp/hello-node .
+
+
+
 Docker Commands For Managing Images
 ====
     docker build
     docker rmi
     docker images
+    docker inspect
 
 
 
-Building An Image
+Visualizing Images
 ====
 
-    sudo docker build -t gcr.io/k8s-bootcamp/hello-node .
+https://imagelayers.io/
 
 
 
@@ -83,6 +98,7 @@ Exploring What You Made
     cd temp
     tar -xvf ../hello-node.tar
     find . -name "*.tar" -exec tar -tvf {} \; | less
+
 
 
 Docker Containers

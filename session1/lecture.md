@@ -17,13 +17,24 @@ Learning Objectives
 
 
 
+Wifi
+====
+
+Use the conference or:
+
+MesosphereElectricGopherTunnel
+
+pw: community2015
+
+
+
 Setup
 ====
 
 Clone this repository:
 
     git clone git@github.com:mesosphere/k8s-bootcamp.git
-
+    git clone https://github.com/mesosphere/k8s-bootcamp.git
 
 
 Section 1: Container Basics
@@ -279,13 +290,6 @@ Another way to look at it is:
 
 
 
-Docker Sequence Diagram
-====
-
-[Insert diagram of simple docker command sequence]
-
-
-
 Registries
 ====
 
@@ -310,13 +314,20 @@ Post your images to the Registry and distribute them to others.
 
 
 
+Review
+====
+
+* chroot, cgroups, namespaces and how they work.
+* Docker makes cgroups and namespaces usable.
+* Docker's structure and usage at the high level.
+* Containers, registry, and why they're an advantage.
+
+
 
 Next Lecture
 ====
 
-This was a quick deep dive into docker, containers, and other tech, so the next 
-lesson we'll actually use Docker and Google Computer Engine to make and run an
-image.
+Actually using Docker to create a small image and start it.
 
 
 
