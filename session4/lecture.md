@@ -252,8 +252,7 @@ Expose Wordpress
     kubectl get nodes
     gcloud compute firewall-rules create wppd-80 --allow tcp:80 \
         --target-tags gke-wppd-XXX-node
-    kubectl expose rc hello-node --create-external-load-balancer=true
-    kubectl get services hello-node
+    kubectl get services wpfrontend
 
 
 
