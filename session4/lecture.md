@@ -271,5 +271,9 @@ You've deployed from a docker and from YAML configurations.
 End Of Lecture 
 =====
 
+Please fill out this survey:
+
+http://bit.ly/1KgSHgx
+
 Questions?
 
