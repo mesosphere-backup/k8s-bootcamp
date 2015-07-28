@@ -70,22 +70,19 @@ Session 4: End-to-end example (end of day)
 Video Demo Wrap Up
 ---
 
-* Kubernetes install on DCOS
-* Kubernetes on DCOS examples
-* Audience and Prerequisites
-* Familiar with Linux/shell
-* Hands-on sessions via GKE 
+[Kubernetes on DCOS](https://www.youtube.com/watch?v=abhYjoZR1O4) 
+
 
 
 Instructors
 ====
 
-Zed Shaw (Mesosphere)
-Michael Hausenblas (Mesosphere)
-Karl Isenberg (Mesosphere)
-Tyler Neely (Mesosphere)
-Aaron Bell (Mesosphere)
-
+* Zed Shaw (Mesosphere)
+* Michael Hausenblas (Mesosphere)
+* Karl Isenberg (Mesosphere)
+* Tyler Neely (Mesosphere)
+* Aaron Bell (Mesosphere)
+* Brian Dorsey (Google) 
 
 
 GKE Install Notes
